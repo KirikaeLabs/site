@@ -87,7 +87,7 @@ export const Footer: FC = () => {
           {/* Copyright Section */}
           <div className="footer__copyright-section">
             <p className="footer__copyright">
-              © {currentYear} Kirikae Labs. Build the Markets They Fear.
+              © {currentYear} Kirikae Labs. If It Doesn't Exist, Build It.
             </p>
           </div>
         </div>
