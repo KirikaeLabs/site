@@ -70,8 +70,8 @@
   --text-secondary: rgba(0, 0, 0, 0.7);
   --background-primary: #FAFAFA;
   --background-secondary: #f3f3f3;
-  --accent-primary: #ffc200;
-  --accent-secondary: #ffd700;
+  --accent-primary: #c686ff;
+  --accent-secondary: #87ff8d;
   --border-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -80,8 +80,8 @@
   --text-secondary: rgba(255, 255, 255, 0.6);
   --background-primary: #000000;
   --background-secondary: #111214;
-  --accent-primary: #ffc200;
-  --accent-secondary: #ffd700;
+  --accent-primary: #c686ff;
+  --accent-secondary: #87ff8d;
   --border-color: rgba(255, 255, 255, 0.1);
 }
 

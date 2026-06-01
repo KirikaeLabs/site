@@ -12,15 +12,15 @@ interface SEOProps {
 }
 
 export const SEO: FC<SEOProps> = ({
-  title = 'Agoriz - Enterprise Web3 Payment Infrastructure | Crypto Payment Solutions',
-  description = 'Transform your business with enterprise-grade Web3 payment infrastructure. Accept crypto payments with low fees, instant settlement, and plug-and-play integration. Battle-tested smart contracts for secure transactions.',
-  keywords = 'agoriz protocol, web3 payment infrastructure, crypto payment processor, blockchain payment solutions, enterprise cryptocurrency payments, smart contract payments, DeFi payment gateway, crypto merchant services, Web3 payment API',
-  image = '/images/brand/agoriz.png',
+  title = 'Kirikae Labs | If It Doesn\'t Exist, Build It.',
+  description = 'Independent software engineering collective building developer tools, autonomous systems, and experimental software. Inspired by classical programming values, focused on understanding systems, solving difficult problems, and creating what does not yet exist.',
+  keywords = 'Kirikae Labs, software engineering, developer tools, autonomous systems, static analysis, telemetry engine, code intelligence, Rust, C development, TS, software architecture, open source software, programming, systems engineering',
+  image = '/images/brand/KirikaeLabs.png',
   url = '/',
   type = 'website',
   twitterCard = 'summary_large_image'
 }) => {
-  const baseUrl = 'https://agoriz.vercel.app';
+  const baseUrl = 'https://KirikaeLabs.vercel.app';
   const fullUrl = url.startsWith('http') ? url : `${baseUrl}${url}`;
   const fullImage = image.startsWith('http') ? image : `${baseUrl}${image}`;
 
@@ -41,7 +41,7 @@ export const SEO: FC<SEOProps> = ({
     updateMetaTag('og:title', title);
     updateMetaTag('og:description', description);
     updateMetaTag('og:image', fullImage);
-    updateMetaTag('og:site_name', 'Agoriz');
+    updateMetaTag('og:site_name', 'Kirikae Labs');
 
     // Twitter
     updateMetaTag('twitter:card', twitterCard);
@@ -53,7 +53,7 @@ export const SEO: FC<SEOProps> = ({
     // Additional Tags
     updateMetaTag('robots', 'index, follow');
     updateMetaTag('language', 'English');
-    updateMetaTag('author', 'Agoriz');
+    updateMetaTag('author', 'Kirikae Labs');
     updateMetaTag('geo.region', 'US');
     updateMetaTag('geo.placename', 'Global');
 
@@ -92,44 +92,37 @@ export const SEO: FC<SEOProps> = ({
     const structuredDataOrg = {
       '@context': 'https://schema.org',
       '@type': 'Organization',
-      name: 'Agoriz',
-      description: 'Enterprise-grade Web3 payment infrastructure for businesses',
+      name: 'Kirikae Labs',
+      description: 'Independent software engineering collective building developer tools and experimental software',
       url: baseUrl,
-      logo: `${baseUrl}/images/brand/agoriz.png`,
+      logo: `${baseUrl}/images/brand/KirikaeLabs.png`,
       sameAs: [
-        'https://twitter.com/agorizbot',
-        'https://linkedin.com/company/agoriz',
-        'https://github.com/sergiobonatto'
+        'https://github.com/KirikaeLabs'
       ],
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'Customer Service',
-        email: 'agoriz@proton.me'
+        email: 'KirikaeLabs@proton.me'
       },
       foundingDate: '2025',
-      industry: 'Financial Technology',
-      keywords: 'Web3 payments, cryptocurrency payments, blockchain infrastructure, DeFi payments'
+      industry: 'Software Development',
+      keywords: 'software engineering, developer tools, autonomous systems, static analysis, open source software'
     };
 
     const structuredDataApp = {
       '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',
-      name: 'Agoriz Payment Infrastructure',
-      description: 'Enterprise-grade Web3 payment infrastructure with smart contract security and instant settlement',
-      applicationCategory: 'BusinessApplication',
+      name: 'Kirikae Labs Software Ecosystem',
+      description:   'A collection of developer tools, telemetry systems, and software engineering projects focused on autonomy, simplicity, and technical rigor.',
       operatingSystem: 'Web-based',
-      offers: {
-        '@type': 'Offer',
-        price: '0.5',
-        priceCurrency: 'USD',
-        description: 'Transaction fee percentage'
-      },
+      applicationCategory: 'DeveloperApplication',
       featureList: [
-        'Instant Settlement',
-        'Multi-signature Security',
-        'REST API Integration',
-        'Smart Contract Escrow',
-        'Real-time Monitoring'
+        'Developer Tooling',
+        'Static Analysis',
+        'Structural Telemetry',
+        'Project Scaffolding',
+        'Autonomous Refactoring Research',
+        'Open Source Development'
       ]
     };
 

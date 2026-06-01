@@ -12,46 +12,49 @@ interface CoreComponent {
 }
 
 const coreComponents: CoreComponent[] = [
+{
+  title: 'UCHIKOMI',
+  subtitle: 'Precision is carved through repeated structural impact.',
+  description:
+    'Structural telemetry for autonomous software evolution.',
+  noteSubtitle: 'What you get',
+  note:
+    'A machine-verifiable map of risk, complexity and change.'
+},
+{
+  title: 'HOROS',
+  subtitle: 'Start simple. Build deliberately.',
+  description:
+    'Project scaffolding for modern C development.',
+  noteSubtitle: 'What you get',
+  note:
+    'Ready-to-build foundations for native, web and bare-metal software.'
+},
   {
-    title: 'Zero-Custody Core',
-    subtitle: 'Your Money Never Leaves Your Control',
+    title: 'Projeto do Savio',
+    subtitle: 'Ele vai criar frase de efeito maneira',
     description:
-      'Process ETH payments without ever giving up custody. Our core protocol includes dynamic fees that reward honest merchants (3-7%), real-time bot protection, and circuit breakers that pause attacks automatically. Built lean and auditable — because your security can\'t depend on complexity.',
-    noteSubtitle: 'What you get',
-    note:
-      'True zero-custody, anti-MEV protection, fair dynamic pricing, emergency controls, battle-tested security.'
-  },
-  {
-    title: 'Multi-Token Power',
-    subtitle: 'ETH, USDT, and Beyond',
-    description:
-      'Accept digital dollars (USDT) and ETH with the same security guarantees. Batch multiple payments to save gas, use gasless signatures for better UX, and scale across any EVM chain. One protocol, unlimited possibilities.',
-    noteSubtitle: 'What you get',
-    note:
-      'USDT support, gas-efficient batching, EIP-712 signatures, multi-chain ready, extensible architecture.'
-  },
-  {
-    title: 'Developer Experience',
-    subtitle: 'From Concept to Live in Minutes',
-    description:
-      'TypeScript SDK with full type safety, real-time event monitoring, and automatic fee calculations. Whether you\'re building a marketplace, service platform, or DeFi protocol — integrate Agoriz payments with just a few function calls.',
+      'Uma descrição legal do projeto',
     noteSubtitle: 'Coming soon',
     note:
-      'REST APIs, auto-generated documentation, one-click deployment tools, and pre-built UI components.'
+      'O que o o usuário ganha?'
+  },
+ {
+    title: 'Projeto do Savio 2',
+    subtitle: 'Ele vai criar outra frase de efeito maneira',
+    description:
+      'Uma descrição legal do projeto',
+    noteSubtitle: 'Coming soon',
+    note:
+      'O que o o usuário ganha?'
   }
 ];
 
 const Services: FC = () => {
   return (
-    <article id="services" title="Services" className="services">
-      <header className="services__header">
-        <h2>How Agoriz Works</h2>
-        <p>
-          Stop choosing between security and simplicity. Agoriz gives you both: enterprise-grade payment infrastructure that's as easy to use as calling a smart contract. No custody risks, no bureaucracy, no compromise — just crypto payments that finally make sense for real businesses.
-        </p>
-      </header>
+    <article id="services" title="Services" className="services"> 
 
-      <Section title="Built in Layers, Deployed as One" className="services__infrastructure">
+      <Section title="Build What You're Missing" className="services__infrastructure">
         <div className="services__grid">
           {coreComponents.map((component, index) => (
             <ComponentCard
@@ -67,11 +70,11 @@ const Services: FC = () => {
       </Section>
 
       <div className="services__cta">
-        <h3>Ready to Build?</h3>
+        <h3>See Something Missing?</h3>
         <p>
-          The protocol is live on mainnet. Smart contracts are deployed. TypeScript types are ready.
+          That's usually where our projects begin.          
           <br />
-          <strong>Your next crypto payment integration starts here.</strong>
+          <strong>If the tool doesn't exist, we build it.</strong>
         </p>
       </div>
     </article>

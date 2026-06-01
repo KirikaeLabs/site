@@ -1,5 +1,5 @@
 import { type FC, useState, useCallback } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { ThemeToggle } from './ThemeToggle'
 import '../../styles/components/layout/Navbar.css'
 
@@ -49,15 +49,13 @@ const Navbar: FC = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo" onClick={(e) => scrollToSection(e, 'home')} style={{ cursor: 'pointer' }}>
-          <img src="/images/brand/agoriz-logo.png" alt="Agoriz Logo" className="navbar-logo-image" />
-          <h1>Agoriz</h1>
+          <img src="/images/brand/KirikaeLogo.png" alt="Kirikae Labs Logo" className="navbar-logo-image" />
+          <h1>Kirikae Labs</h1>
         </div>
 
         <div className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
           <a href="#" onClick={(e) => scrollToSection(e, 'home')}>Home</a>
           <a href="#about" onClick={(e) => scrollToSection(e, 'about')}>About</a>
-          <Link to="/why" onClick={() => setIsMenuOpen(false)}>Why Agoriz?</Link>
-          <a href="#services" onClick={(e) => scrollToSection(e, 'services')}>Services</a>
           {/* <a href="#team" onClick={(e) => scrollToSection(e, 'team')}>Team</a> */}
           <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a>
           <ThemeToggle />

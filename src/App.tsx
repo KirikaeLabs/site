@@ -7,7 +7,6 @@ import Services from './components/sections/Services'
 // import Team from './components/sections/Team'
 import Footer from './components/layout/Footer'
 import Contact from './components/sections/Contact'
-import WhyAgoriz from './pages/WhyAgoriz'
 import NotFound from './pages/NotFound'
 import { SEO } from './utils/SEO'
 import { ScrollToTop } from './utils/ScrollToTop'
@@ -31,7 +30,6 @@ function App() {
               <Contact />
             </main>
           } />
-          <Route path="/why" element={<WhyAgoriz />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

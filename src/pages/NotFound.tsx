@@ -22,8 +22,8 @@ export const NotFound: FC = () => {
   return (
     <>
       <SEO
-        title="404 - Page Not Found | Agoriz"
-        description="The page you're looking for cannot be found. Return to Agoriz's home page."
+        title="404 - Page Not Found | Kirikae Labs"
+        description="The page you're looking for cannot be found. Return to Kirikae Labs's home page."
       />
       <main className="not-found">
         <div className="particles">

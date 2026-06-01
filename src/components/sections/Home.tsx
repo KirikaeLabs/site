@@ -35,11 +35,10 @@ export const Home: FC = () => {
         ))}
       </div>
       <div className="home__container">
-        <h1 className="home__banner">Agoriz</h1>
-        <h2 className="home__subtitle">why aren’t you accepting crypto?</h2>
+        <h1 className="home__banner">Kirikae Labs</h1>
+        <h2 className="home__subtitle">why compromise on the quality of your digital tools?</h2>
         <p className="home__description">
-          Revolutionize your payment experience with seamless, secure, and scalable solutions.
-        </p>
+Driven by challenges, inspired by classic software paradigms. We design pragmatic applications that put capability back in the hands of the user.        </p>
       </div>
     </Section>
   );
